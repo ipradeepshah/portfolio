@@ -27,16 +27,16 @@ const nextConfig = {
   },
 
   // Redirects — ensure www goes to non-www
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.pradeepshah.com.np' }],
-        destination: 'https://pradeepshah.com.np/:path*',
-        permanent: true,
-      },
-    ]
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/:path*',
+  //       has: [{ type: 'host', value: 'www.pradeepshah.com.np' }],
+  //       destination: 'https://pradeepshah.com.np/:path*',
+  //       permanent: true,
+  //     },
+  //   ]
+  // },
 }
 
 module.exports = nextConfig
