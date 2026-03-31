@@ -1,0 +1,41 @@
+.expertise { background: var(--navy-mid); }
+
+.expertise h2 { font-size: clamp(2.5rem, 4.5vw, 4rem); font-weight: 600; line-height: 1.1; margin-bottom: 1rem; }
+.expertise h2 em { font-style: italic; color: var(--gold); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--navy);
+  border: 1px solid var(--border);
+  padding: 2rem 1.8rem;
+  transition: border-color 0.3s;
+}
+.card:hover { border-color: var(--gold-dim); }
+
+.icon {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.card h4 {
+  font-family: var(--font-cormorant), serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.card p { color: var(--gray); font-size: 0.85rem; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}

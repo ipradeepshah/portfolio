@@ -1,0 +1,132 @@
+.section { background: var(--navy); }
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.info p { color: var(--gray); margin-bottom: 2.5rem; }
+
+.info h2 { font-size: clamp(2.5rem, 4.5vw, 4rem); font-weight: 600; line-height: 1.1; margin-bottom: 1rem; }
+.info h2 em { font-style: italic; color: var(--gold); }
+
+.items { display: flex; flex-direction: column; gap: 1.4rem; }
+
+.item { display: flex; align-items: center; gap: 1rem; }
+
+.itemIcon {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.itemText { font-size: 0.88rem; color: var(--gray); }
+.itemText strong {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.15rem;
+  font-weight: 500;
+}
+.itemText a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+.itemText a:hover { color: var(--gold); }
+.itemText span { color: var(--gray); }
+
+.socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  text-decoration: none;
+  transition: border-color 0.3s, color 0.3s;
+}
+.socialBtn:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Form */
+.form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.field { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.field label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.field input,
+.field textarea {
+  background: var(--navy-light);
+  border: 1px solid var(--border);
+  color: var(--white);
+  padding: 0.9rem 1.1rem;
+  font-family: var(--font-dm-sans), sans-serif;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.3s;
+  resize: none;
+  width: 100%;
+}
+.field input:focus,
+.field textarea:focus { border-color: var(--gold-dim); }
+.field input::placeholder,
+.field textarea::placeholder { color: var(--gray); opacity: 0.5; }
+
+.sendBtn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s, transform 0.2s;
+}
+.sent {
+  background: #1d6b42 !important;
+  transform: none !important;
+  cursor: default;
+}
+.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+.sendBtn:disabled {
+  cursor: not-allowed;
+}
+.field input:disabled,
+.field textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.errorMsg {
+  padding: 0.75rem 1rem;
+  background: rgba(220, 60, 60, 0.1);
+  border: 1px solid rgba(220, 60, 60, 0.35);
+  color: #f87171;
+  font-size: 0.82rem;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: 1fr; gap: 3rem; }
+}

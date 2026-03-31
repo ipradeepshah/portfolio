@@ -1,0 +1,49 @@
+.main { padding-top: 72px; }
+
+.header { background: var(--navy-mid); padding: 5rem 0 3.5rem; position: relative; overflow: hidden; }
+.headerBg { position: absolute; inset: 0; background: radial-gradient(ellipse 50% 60% at 80% 40%, rgba(201,168,76,0.06), transparent 70%); }
+.breadcrumb { display: flex; gap: 0.5rem; font-size: 0.75rem; color: var(--gray); margin-bottom: 1.2rem; text-transform: uppercase; letter-spacing: 0.1em; }
+.breadcrumb a { color: var(--gold); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.header h1 { font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 600; line-height: 1.1; max-width: 780px; position: relative; }
+.meta { display: flex; gap: 0.6rem; font-size: 0.8rem; color: var(--gray); margin-top: 1.2rem; flex-wrap: wrap; position: relative; }
+.meta a { color: var(--gold); text-decoration: none; }
+
+.content { background: var(--navy); }
+.contentGrid { display: grid; grid-template-columns: 1fr 280px; gap: 5rem; align-items: start; }
+
+.article { color: var(--gray); font-size: 0.96rem; line-height: 1.85; }
+.article h2 { font-family: var(--font-cormorant), serif; font-size: 1.8rem; font-weight: 600; color: var(--white); margin: 2.5rem 0 1rem; }
+.article h3 { font-family: var(--font-cormorant), serif; font-size: 1.3rem; font-weight: 600; color: var(--white); margin: 2rem 0 0.8rem; }
+.article p { margin-bottom: 1.3rem; }
+.article strong { color: var(--white); font-weight: 500; }
+.article ul { padding-left: 1.5rem; margin-bottom: 1.3rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.article ul li::marker { color: var(--gold); }
+
+.sidebar { position: sticky; top: 100px; display: flex; flex-direction: column; gap: 1.2rem; }
+.authorCard { background: var(--navy-light); border: 1px solid var(--border); padding: 1.8rem; text-align: center; }
+.authorAvatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--navy-light), var(--navy)); border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; color: var(--gold); margin: 0 auto 0.8rem; overflow: hidden; }
+.authorAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.authorName { font-family: var(--font-cormorant), serif; font-size: 1.15rem; font-weight: 600; margin-bottom: 0.3rem; }
+.authorTitle { font-size: 0.72rem; color: var(--gray); letter-spacing: 0.08em; margin-bottom: 1rem; }
+.authorLink { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+.authorLink:hover { border-color: var(--gold); }
+
+.relatedBox { background: var(--navy-light); border: 1px solid var(--border); padding: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; }
+.relatedTitle { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem; }
+.relatedLink { font-size: 0.82rem; color: var(--gray); text-decoration: none; transition: color 0.3s; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+.relatedLink:last-child { border-bottom: none; }
+.relatedLink:hover { color: var(--gold); }
+
+.backSection { background: var(--navy); padding: 2rem 0 4rem; }
+.backLink { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+.backLink:hover { border-color: var(--gold); }
+
+@media (max-width: 900px) {
+  .contentGrid { grid-template-columns: 1fr; gap: 3rem; }
+  .sidebar { position: static; }
+}

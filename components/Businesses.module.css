@@ -1,0 +1,128 @@
+.section { background: var(--navy); }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  position: relative;
+  background: var(--navy-light);
+  border: 1px solid var(--border);
+  padding: 3rem 2.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(201,168,76,0.1);
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.num {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: rgba(201,168,76,0.1);
+  line-height: 1;
+  position: absolute;
+  top: 1rem; right: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.8rem;
+  color: var(--gold);
+  font-size: 1.4rem;
+}
+
+.type {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.card h3 {
+  font-family: var(--font-cormorant), serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  margin-bottom: 1rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--gold);
+  background: rgba(201,168,76,0.06);
+}
+.dev {
+  border-color: rgba(100,160,255,0.4);
+  color: #7ab0f5;
+  background: rgba(100,160,255,0.06);
+}
+
+.card p {
+  color: var(--gray);
+  font-size: 0.92rem;
+  margin-bottom: 1.8rem;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+.features li::before {
+  content: '◆';
+  color: var(--gold);
+  font-size: 0.45rem;
+  flex-shrink: 0;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+.link:hover { border-color: var(--gold); }
+.link::after { content: '→'; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}

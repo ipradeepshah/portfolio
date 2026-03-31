@@ -1,0 +1,105 @@
+.footer {
+  background: var(--navy-mid);
+  border-top: 1px solid var(--border);
+}
+
+.top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 4rem 3rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.6rem;
+}
+
+.tagline {
+  font-size: 0.78rem;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social:hover { color: var(--gold); }
+
+.col { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.colTitle {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.colLink {
+  font-size: 0.8rem;
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.3s;
+  line-height: 1.5;
+}
+.colLink:hover { color: var(--white); }
+
+.bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 4rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copy {
+  font-size: 0.75rem;
+  color: var(--gray);
+  opacity: 0.7;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottomLink {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.bottomLink:hover { color: var(--gold); }
+
+@media (max-width: 1024px) {
+  .top { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+}
+@media (max-width: 600px) {
+  .top { grid-template-columns: 1fr; padding: 3rem 1.5rem 2rem; }
+  .bottom { flex-direction: column; text-align: center; padding: 1.5rem; }
+  .socials { flex-direction: row; flex-wrap: wrap; }
+}

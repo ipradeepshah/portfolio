@@ -1,0 +1,120 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: rgba(10,14,26,0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  animation: fadeDown 0.8s ease both;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.links a {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+.links a:hover { color: var(--gold); }
+.active { color: var(--gold) !important; }
+
+.cta {
+  padding: 0.5rem 1.3rem;
+  border: 1px solid var(--gold);
+  color: var(--gold) !important;
+  border-radius: 2px;
+  transition: background 0.3s, color 0.3s !important;
+}
+.cta:hover { background: var(--gold) !important; color: var(--navy) !important; }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.bar1, .bar2, .bar3 {
+  display: block; width: 24px; height: 2px;
+  background: var(--white); transition: all 0.3s;
+}
+.bar1Open { transform: translateY(7px) rotate(45deg); background: var(--gold); }
+.bar2Open { opacity: 0; }
+.bar3Open { transform: translateY(-7px) rotate(-45deg); background: var(--gold); }
+
+/* Mobile menu */
+.mobileMenu {
+  position: fixed;
+  top: 60px; left: 0; right: 0;
+  background: rgba(10,14,26,0.98);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  gap: 1.2rem;
+  animation: fadeDown 0.3s ease both;
+}
+.mobileLink {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  padding: 0.4rem 0;
+}
+.mobileLink:hover { color: var(--gold); }
+.mobileActive {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+}
+.mobileCta {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background 0.3s;
+}
+.mobileCta:hover { background: var(--gold); color: var(--navy); }
+
+@media (max-width: 900px) {
+  .nav { padding: 1.2rem 1.5rem; }
+  .links { display: none; }
+  .hamburger { display: flex; }
+}
