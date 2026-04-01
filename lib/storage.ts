@@ -1,79 +1,73 @@
 /**
- * Storage Layer — auto-switches between:
- *   - Vercel Blob Storage  (when BLOB_READ_WRITE_TOKEN is set — production)
- *   - Local JSON file      (when running locally — development)
- *
- * This means posts survive forever on Vercel and work normally in local dev.
+ * Storage Layer
+ *   - Vercel Blob  → when BLOB_READ_WRITE_TOKEN is set (production)
+ *   - Local JSON   → when running locally (development)
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs'
 import { join } from 'path'
 
-const BLOB_KEY  = 'posts.json'
-const LOCAL_DIR  = join(process.cwd(), 'data')
-const LOCAL_FILE = join(LOCAL_DIR, 'posts.json')
+const BLOB_PATHNAME = 'pradeep-posts/posts.json'
+const LOCAL_DIR     = join(process.cwd(), 'data')
+const LOCAL_FILE    = join(LOCAL_DIR, 'posts.json')
 
 export interface Post {
-  slug: string
-  title: string
-  excerpt: string
-  category: string
-  date: string
-  readTime: string
+  slug:      string
+  title:     string
+  excerpt:   string
+  category:  string
+  date:      string
+  readTime:  string
   published: boolean
-  featured: boolean
-  content: string
+  featured:  boolean
+  content:   string
 }
 
-function isVercel(): boolean {
-  return !!process.env.BLOB_READ_WRITE_TOKEN
-}
+const useBlob = () => !!process.env.BLOB_READ_WRITE_TOKEN
 
-// ── READ ─────────────────────────────────────────────────────────────────────
-
+// ── READ ──────────────────────────────────────────────────────────────────────
 export async function readPosts(): Promise<Post[]> {
   try {
-    if (isVercel()) {
-      // Vercel Blob — fetch the stored JSON file
-      const { list, head, get } = await import('@vercel/blob')
+    if (useBlob()) {
+      const { head } = await import('@vercel/blob')
 
-      // Try to get existing blob
-      const { blobs } = await list({ prefix: BLOB_KEY })
-      const existing = blobs.find(b => b.pathname === BLOB_KEY)
-
-      if (!existing) {
-        // First time — seed from local posts.json bundled at build time
-        const seed = getSeedPosts()
+      // Build the expected public URL from the blob pathname
+      // Format: https://<store>.public.blob.vercel-storage.com/<pathname>
+      try {
+        const blobInfo = await head(BLOB_PATHNAME)
+        const res = await fetch(blobInfo.url, {
+          cache: 'no-store',
+          headers: { 'Cache-Control': 'no-cache' },
+        })
+        if (!res.ok) throw new Error(`Fetch failed: ${res.status}`)
+        const data = await res.json()
+        return Array.isArray(data) ? data : []
+      } catch {
+        // File doesn't exist yet — seed it
+        console.log('[Storage] No blob found, seeding from local data...')
+        const seed = getLocalPosts()
         await writePosts(seed)
         return seed
       }
-
-      const res = await fetch(existing.url, { cache: 'no-store' })
-      const data = await res.json()
-      return Array.isArray(data) ? data : []
     } else {
-      // Local filesystem
-      if (!existsSync(LOCAL_FILE)) return getSeedPosts()
-      const raw = readFileSync(LOCAL_FILE, 'utf-8')
-      return JSON.parse(raw)
+      return getLocalPosts()
     }
   } catch (e) {
     console.error('[Storage] readPosts error:', e)
-    return getSeedPosts()
+    return getLocalPosts()
   }
 }
 
-// ── WRITE ────────────────────────────────────────────────────────────────────
-
+// ── WRITE ─────────────────────────────────────────────────────────────────────
 export async function writePosts(posts: Post[]): Promise<void> {
   const json = JSON.stringify(posts, null, 2)
 
-  if (isVercel()) {
+  if (useBlob()) {
     const { put } = await import('@vercel/blob')
-    await put(BLOB_KEY, json, {
+    await put(BLOB_PATHNAME, json, {
       access: 'public',
       contentType: 'application/json',
-      addRandomSuffix: false, // always overwrite same key
+      allowOverwrite: true,  // overwrite the same file each time
     })
   } else {
     if (!existsSync(LOCAL_DIR)) mkdirSync(LOCAL_DIR, { recursive: true })
@@ -81,12 +75,9 @@ export async function writePosts(posts: Post[]): Promise<void> {
   }
 }
 
-// ── SEED DATA ────────────────────────────────────────────────────────────────
-// Fallback seed posts (same as data/posts.json) used on first Vercel deploy
-
-function getSeedPosts(): Post[] {
+// ── LOCAL FALLBACK ────────────────────────────────────────────────────────────
+function getLocalPosts(): Post[] {
   try {
-    // Try to read local seed file (bundled at build time)
     if (existsSync(LOCAL_FILE)) {
       return JSON.parse(readFileSync(LOCAL_FILE, 'utf-8'))
     }
@@ -94,8 +85,7 @@ function getSeedPosts(): Post[] {
   return []
 }
 
-// ── HELPERS ──────────────────────────────────────────────────────────────────
-
+// ── SLUGIFY ───────────────────────────────────────────────────────────────────
 export function slugify(title: string): string {
   return title
     .toLowerCase()
