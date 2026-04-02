@@ -1,0 +1,93 @@
+.wrap {
+  margin: 3rem 0 0;
+  padding: 2rem;
+  background: var(--navy-light);
+  border: 1px solid var(--border);
+  position: relative;
+}
+.wrap::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.label {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.label::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.25s;
+  font-family: var(--font-dm-sans), sans-serif;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: color-mix(in srgb, var(--platform-color) 15%, transparent);
+  border-color: var(--platform-color);
+  color: var(--white);
+}
+
+.btnIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--platform-color);
+  transition: color 0.25s;
+}
+
+.btn:hover .btnIcon {
+  color: var(--platform-color);
+}
+
+.btnLabel {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+/* Copied state */
+.copied {
+  border-color: #6ee7b7 !important;
+  color: #6ee7b7 !important;
+  background: rgba(110,231,183,0.08) !important;
+}
+.copied .btnIcon {
+  color: #6ee7b7 !important;
+}
+
+@media (max-width: 600px) {
+  .btn { flex: 1 1 calc(50% - 0.3rem); justify-content: center; }
+}

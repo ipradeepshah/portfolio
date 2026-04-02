@@ -39,6 +39,24 @@
 .relatedLink:last-child { border-bottom: none; }
 .relatedLink:hover { color: var(--gold); }
 
+/* Sidebar share buttons */
+.sideShareBox { background: var(--navy-light); border: 1px solid var(--border); padding: 1.5rem; }
+.sideShareTitle { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.sideShareBtns { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; }
+.sideShareBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.2s;
+  border-radius: 2px;
+}
+.sideShareBtn:hover { opacity: 1; transform: translateY(-2px); }
+
 .backSection { background: var(--navy); padding: 2rem 0 4rem; }
 .backLink { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
 .backLink:hover { border-color: var(--gold); }
