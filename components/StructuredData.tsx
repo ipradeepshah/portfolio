@@ -92,6 +92,8 @@ export default function StructuredData() {
       'https://www.tiktok.com/@ipradeepshah',
       'https://github.com/ipradeepshah',
       'https://www.facebook.com/ipradeepshah/',
+      'https://www.wikidata.org/wiki/Q138849114',
+      'https://nec.gov.np/registration/9102?programName=Computer%20Engineering',
       `${BASE}/`,
     ],
   }

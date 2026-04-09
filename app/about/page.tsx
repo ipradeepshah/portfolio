@@ -131,7 +131,7 @@ export default function AboutPage() {
                 {
                   icon: "💻",
                   title: "Computer Engineering",
-                  desc: "B.E. from Kurukshetra University — systems architecture, full-stack development, database design, and enterprise software.",
+                  desc: "B. Tech from Kurukshetra University — systems architecture, full-stack development, database design, and enterprise software.",
                 },
                 {
                   icon: "🏢",
@@ -182,7 +182,7 @@ export default function AboutPage() {
                   year: "Education",
                   title: "B.E. Computer Engineering",
                   sub: "Kurukshetra University, Kurukshetra, India",
-                  desc: "Completed a Bachelor of Engineering in Computer Engineering, building expertise in software development, algorithms, databases, and systems design.",
+                  desc: "Completed a Bachelor of Technology in Computer Science Engineering, building expertise in software development, algorithms, databases, and systems design.",
                 },
                 {
                   year: "Career",
