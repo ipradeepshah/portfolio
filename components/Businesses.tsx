@@ -5,7 +5,7 @@ const businesses = [
     num: '01',
     icon: '⚙',
     type: 'Hardware Business · CEO',
-    name: 'Standard Hardware & Supply',
+    name: 'Siyaram Hardware & Suppliers',
     status: '✦ Active · Birgunj, Nepal',
     statusClass: 'active',
     description:

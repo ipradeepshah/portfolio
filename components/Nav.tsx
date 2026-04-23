@@ -11,7 +11,7 @@ export default function Nav() {
   const links = [
     { href: '/',                  label: 'Home' },
     { href: '/about',             label: 'About' },
-    { href: '/standard-hardware', label: 'Hardware' },
+    { href: '/siyaram-hardware', label: 'Hardware' },
     { href: '/standard-erp',      label: 'Standard ERP' },
     { href: '/blog',              label: 'Blog' },
   ]

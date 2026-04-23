@@ -47,7 +47,7 @@ export default function About() {
               can transform entire industries.
             </p>
             <p>
-              As the CEO of <strong>Standard Hardware &amp; Supply</strong>, I lead a growing hardware and
+              As the CEO of <strong>Siyaram Hardware &amp; Suppliers</strong>, I lead a growing hardware and
               supply business in Birgunj, Nepal — serving contractors, builders, and local businesses with
               construction materials, hardware tools, plumbing supplies, and industrial products.
             </p>

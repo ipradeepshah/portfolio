@@ -9,12 +9,12 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About Pradeep Shah | Computer Engineer | CEO & Founder | Nepal",
   description:
-    "Learn about Pradeep Shah — Computer Engineer from Kurukshetra University, CEO of Standard Hardware & Supply, and Founder of Standard ERP. Based in Birgunj, Nepal.",
+    "Learn about Pradeep Shah — Computer Engineer from Kurukshetra University, CEO of Siyaram Hardware & Suppliers, and Founder of Standard ERP. Based in Birgunj, Nepal.",
   alternates: { canonical: "https://pradeepshah.com.np/about" },
   openGraph: {
     title: "About Pradeep Shah | Computer Engineer | CEO & Founder",
     description:
-      "Computer Engineer, CEO of Standard Hardware & Supply, Founder of Standard ERP. Based in Birgunj, Nepal.",
+      "Computer Engineer, CEO of Siyaram Hardware & Suppliers, Founder of Standard ERP. Based in Birgunj, Nepal.",
     url: "https://pradeepshah.com.np/about",
   },
 };
@@ -92,7 +92,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Returning to Birgunj, Nepal, I took the helm of{" "}
-                  <strong>Standard Hardware &amp; Supply</strong> — a growing
+                  <strong>Siyaram Hardware &amp; Suppliers</strong> — a growing
                   hardware and construction materials business serving
                   contractors, builders, and local businesses across the region.
                   As CEO, my focus has been on combining operational excellence
@@ -136,7 +136,7 @@ export default function AboutPage() {
                 {
                   icon: "🏢",
                   title: "Business Leadership",
-                  desc: "CEO-level execution at Standard Hardware & Supply — strategy, operations, team management, and business modernization.",
+                  desc: "CEO-level execution at Siyaram Hardware & Suppliers — strategy, operations, team management, and business modernization.",
                 },
                 {
                   icon: "📊",
@@ -186,9 +186,9 @@ export default function AboutPage() {
                 },
                 {
                   year: "Career",
-                  title: "CEO — Standard Hardware & Supply",
+                  title: "CEO — Siyaram Hardware & Suppliers",
                   sub: "Birgunj, Parsa, Nepal",
-                  desc: "Took leadership of Standard Hardware & Supply, driving growth, modernizing operations, and building a reputation for quality and reliability in the hardware and construction materials sector.",
+                  desc: "Took leadership of Siyaram Hardware & Suppliers, driving growth, modernizing operations, and building a reputation for quality and reliability in the hardware and construction materials sector.",
                 },
                 {
                   year: "Founding",
@@ -225,7 +225,7 @@ export default function AboutPage() {
                 Want to <em>Connect?</em>
               </h2>
               <p>
-                Whether you&apos;re interested in Standard Hardware &amp;
+                Whether you&apos;re interested in Siyaram Hardware &amp;
                 Supply, Standard ERP, or want to discuss a collaboration —
                 I&apos;d love to hear from you.
               </p>

@@ -6,14 +6,14 @@ import type { Metadata } from 'next'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'Standard Hardware & Supply | Hardware Store Birgunj Nepal | Construction Materials',
-  description: 'Standard Hardware & Supply is a leading hardware and construction materials business in Birgunj, Nepal. We supply hardware tools, plumbing supplies, construction materials and industrial products to contractors and builders.',
-  keywords: ['hardware store Birgunj', 'construction materials Nepal', 'hardware supply Birgunj', 'plumbing supplies Nepal', 'industrial products Birgunj', 'Standard Hardware Supply'],
-  alternates: { canonical: 'https://pradeepshah.com.np/standard-hardware' },
+  title: 'Siyaram Hardware & Suppliers | Hardware Store Birgunj Nepal | Construction Materials',
+  description: 'Siyaram Hardware & Suppliers is a leading hardware and construction materials business in Birgunj, Nepal. We supply hardware tools, plumbing supplies, construction materials and industrial products to contractors and builders.',
+  keywords: ['hardware store Birgunj', 'construction materials Nepal', 'hardware supply Birgunj', 'plumbing supplies Nepal', 'industrial products Birgunj', 'Siyaram Hardware Suppliers'],
+  alternates: { canonical: 'https://pradeepshah.com.np/siyaram-hardware' },
   openGraph: {
-    title: 'Standard Hardware & Supply | Birgunj, Nepal',
+    title: 'Siyaram Hardware & Supply | Birgunj, Nepal',
     description: 'Leading hardware and construction materials supplier in Birgunj, Nepal. Serving contractors, builders, and local businesses.',
-    url: 'https://pradeepshah.com.np/standard-hardware',
+    url: 'https://pradeepshah.com.np/siyaram-hardware',
   },
 }
 
@@ -35,7 +35,7 @@ const whyUs = [
   { icon: '✓', title: 'Tech-Driven',          desc: 'Led by a Computer Engineer CEO focused on modernizing operations through technology and innovation.' },
 ]
 
-export default function StandardHardwarePage() {
+export default function SiyaramHardwarePage() {
   return (
     <>
       <ClientEffects />
@@ -50,7 +50,7 @@ export default function StandardHardwarePage() {
             <div className={styles.heroInner}>
               <div className={`${styles.heroContent} fade-in`}>
                 <div className="section-tag">Hardware Business · Birgunj, Nepal</div>
-                <h1>Standard Hardware<br /><em>&amp; Supply</em></h1>
+                <h1>Siyaram Hardware<br /><em>&amp; Suppliers</em></h1>
                 <p className={styles.heroSub}>
                   Your trusted partner for construction materials, hardware tools, plumbing supplies, and industrial products in Birgunj, Nepal.
                 </p>
@@ -89,9 +89,9 @@ export default function StandardHardwarePage() {
                 <div className="section-tag">About the Business</div>
                 <h2>Hardware &amp; Supply<br /><em>Excellence in Birgunj</em></h2>
                 <div className="gold-divider" />
-                <p>Standard Hardware &amp; Supply is a growing hardware and supply business located in Birgunj, Nepal. Founded with a commitment to quality and reliability, we have established ourselves as a trusted supplier for contractors, builders, and local businesses across the region.</p>
+                <p>Siyaram Hardware &amp; Suppliers is a growing hardware and supply business located in Birgunj, Nepal. Founded with a commitment to quality and reliability, we have established ourselves as a trusted supplier for contractors, builders, and local businesses across the region.</p>
                 <p>We specialize in providing construction materials, hardware tools, plumbing supplies, and essential industrial products — all under one roof. Our goal is to simplify procurement for our customers by offering a wide product range, dependable service, and expert guidance.</p>
-                <p>Under the leadership of CEO <strong>Pradeep Shah</strong>, a Computer Engineer by profession, Standard Hardware &amp; Supply is actively modernizing its operations through technology — making it easier for customers to find, order, and receive the products they need.</p>
+                <p>Under the leadership of CEO <strong>Pradeep Shah</strong>, a Computer Engineer by profession, Siyaram Hardware &amp; Suppliers is actively modernizing its operations through technology — making it easier for customers to find, order, and receive the products they need.</p>
               </div>
               <div className="fade-in">
                 <div className={styles.statsGrid}>
@@ -133,7 +133,7 @@ export default function StandardHardwarePage() {
         <section className={styles.whySection}>
           <div className="section-inner">
             <div className="section-tag fade-in">Why Choose Us</div>
-            <h2 className="fade-in">The Standard Hardware<br /><em>Difference</em></h2>
+            <h2 className="fade-in">The Siyaram Hardware<br /><em>Difference</em></h2>
             <div className={styles.whyGrid}>
               {whyUs.map(w => (
                 <div key={w.title} className={`${styles.whyCard} fade-in`}>

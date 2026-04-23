@@ -1,8 +1,8 @@
 import styles from './Expertise.module.css'
 
 const skills = [
-  { icon: '💻', title: 'Software Engineering',     desc: 'B.E. Computer Engineering from Kurukshetra University — systems architecture, full-stack development, and enterprise software design.' },
-  { icon: '🏢', title: 'CEO Leadership',            desc: 'Executive leadership at Standard Hardware & Supply — driving vision, strategy, and modernizing traditional business through technology in Birgunj.' },
+  { icon: '💻', title: 'Software Engineering',     desc: 'B. Tech. in Computer Engineering from Kurukshetra University — systems architecture, full-stack development, and enterprise software design.' },
+  { icon: '🏢', title: 'CEO Leadership',            desc: 'Executive leadership at Siyaram Hardware & Suppliers — driving vision, strategy, and modernizing traditional business through technology in Birgunj.' },
   { icon: '📊', title: 'ERP & Business Systems',    desc: 'Founder-level expertise designing Standard ERP — a practical, integrated business management platform built specifically for SMEs in Nepal.' },
   { icon: '🔗', title: 'Supply Chain & Hardware',   desc: 'Hands-on expertise in construction materials, hardware tools, plumbing supplies, and B2B procurement and supply chain management in Nepal.' },
   { icon: '🚀', title: 'Product Development',       desc: 'Full-cycle product thinking — from identifying SME pain points to building software that solves real operational problems efficiently.' },

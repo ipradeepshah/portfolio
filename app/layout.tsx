@@ -30,15 +30,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE),
 
   title: {
-    default: 'Pradeep Shah | CEO Standard Hardware & Supply | Founder Standard ERP | Birgunj Nepal',
+    default: 'Pradeep Shah | CEO Siyaram Hardware & Suppliers | Founder Standard ERP | Birgunj Nepal',
     template: '%s | Pradeep Shah',
   },
 
-  description: 'Pradeep Shah — Computer Engineer from Kurukshetra University, CEO of Standard Hardware & Supply in Birgunj Nepal, and Founder of Standard ERP business management software for SMEs in Nepal.',
+  description: 'Pradeep Shah — Computer Engineer from Kurukshetra University, CEO of Siyaram Hardware & Suppliers in Birgunj Nepal, and Founder of Standard ERP business management software for SMEs in Nepal.',
 
   keywords: [
     'Pradeep Shah', 'Pradeep Shah Nepal', 'Pradeep Shah CEO', 'Pradeep Shah Birgunj',
-    'ipradeepshah', 'i_pradeepshah', 'Standard Hardware Supply', 'Standard Hardware Birgunj',
+    'ipradeepshah', 'i_pradeepshah', 'Siyaram Hardware Suppliers', 'Siyaram Hardware Birgunj',
     'Standard ERP Nepal', 'Standard ERP software',
     'hardware store Birgunj', 'construction materials Birgunj Nepal',
     'ERP software Nepal', 'business management software Nepal',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     type: 'profile',
     url: BASE + '/',
     title: 'Pradeep Shah | CEO & Founder | Computer Engineer | Nepal',
-    description: 'CEO of Standard Hardware & Supply (Birgunj, Nepal) and Founder of Standard ERP. Computer Engineer from Kurukshetra University.',
+    description: 'CEO of Siyaram Hardware & Suppliers (Birgunj, Nepal) and Founder of Standard ERP. Computer Engineer from Kurukshetra University.',
     siteName: 'Pradeep Shah',
     locale: 'en_US',
     images: [
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Pradeep Shah — CEO of Standard Hardware & Supply | Founder of Standard ERP',
+        alt: 'Pradeep Shah — CEO of Siyaram Hardware & Suppliers | Founder of Standard ERP',
         type: 'image/jpeg',
       },
     ],
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     site: '@i_pradeepshah',
     creator: '@i_pradeepshah',
     title: 'Pradeep Shah | CEO & Founder | Computer Engineer | Nepal',
-    description: 'CEO of Standard Hardware & Supply, Birgunj. Founder of Standard ERP. Computer Engineer, Nepal.',
+    description: 'CEO of Siyaram Hardware & Suppliers, Birgunj. Founder of Standard ERP. Computer Engineer, Nepal.',
     images: [{ url: '/og-image.jpg', alt: 'Pradeep Shah — CEO & Founder' }],
   },
 

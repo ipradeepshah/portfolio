@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Pradeep Shah | CEO & Founder | Computer Engineer | Birgunj, Nepal',
-  description: 'Pradeep Shah is a Computer Engineer from Kurukshetra University, CEO of Standard Hardware & Supply in Birgunj, Nepal, and Founder of Standard ERP — building next-generation business management software for SMEs.',
+  description: 'Pradeep Shah is a Computer Engineer from Kurukshetra University, CEO of Siyaram Hardware & Suppliers in Birgunj, Nepal, and Founder of Standard ERP — building next-generation business management software for SMEs.',
   alternates: { canonical: 'https://pradeepshah.com.np/' },
 }
 

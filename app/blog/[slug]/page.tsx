@@ -96,7 +96,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   </div>
                   <div className={styles.relatedBox}>
                     <div className={styles.relatedTitle}>Explore</div>
-                    <Link href="/standard-hardware" className={styles.relatedLink}>Standard Hardware &amp; Supply →</Link>
+                    <Link href="/siyaram-hardware" className={styles.relatedLink}>Siyaram Hardware &amp; Suppliers →</Link>
                     <Link href="/standard-erp"      className={styles.relatedLink}>Standard ERP →</Link>
                     <Link href="/contact"            className={styles.relatedLink}>Get in Touch →</Link>
                   </div>

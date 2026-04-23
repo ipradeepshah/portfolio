@@ -13,7 +13,7 @@ export default function HomeBizCards() {
             <div className={styles.num}>01</div>
             <div className={styles.icon}>⚙</div>
             <div className={styles.type}>Hardware Business · CEO</div>
-            <h3>Standard Hardware &amp; Supply</h3>
+            <h3>Siyaram Hardware &amp; Suppliers</h3>
             <div className={styles.status}>✦ Active · Birgunj, Nepal</div>
             <p>A growing hardware and supply business in Birgunj, Nepal — specializing in construction materials, hardware tools, plumbing supplies, and industrial products for contractors and builders.</p>
             <ul className={styles.features}>
@@ -21,7 +21,7 @@ export default function HomeBizCards() {
               <li>Plumbing supplies &amp; industrial products</li>
               <li>Serving contractors &amp; builders in Nepal</li>
             </ul>
-            <Link href="/standard-hardware" className={styles.link}>View Full Details</Link>
+            <Link href="/siyaram-hardware" className={styles.link}>View Full Details</Link>
           </div>
 
           <div className={`${styles.card} fade-in`}>

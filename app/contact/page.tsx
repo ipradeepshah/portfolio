@@ -5,8 +5,8 @@ import ContactForm from '@/components/Contact'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Pradeep Shah | Standard Hardware & Supply | Standard ERP',
-  description: 'Get in touch with Pradeep Shah — CEO of Standard Hardware & Supply and Founder of Standard ERP in Birgunj, Nepal. Email: ipradeepshah@gmail.com | WhatsApp: +977 9815256619',
+  title: 'Contact Pradeep Shah | Siyaram Hardware & Suppliers | Standard ERP',
+  description: 'Get in touch with Pradeep Shah — CEO of Siyaram Hardware & Suppliers and Founder of Standard ERP in Birgunj, Nepal. Email: ipradeepshah@gmail.com | WhatsApp: +977 9815256619',
   alternates: { canonical: 'https://pradeepshah.com.np/contact' },
 }
 

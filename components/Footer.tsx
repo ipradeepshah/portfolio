@@ -30,7 +30,7 @@ export default function Footer() {
           <div className={styles.colTitle}>Pages</div>
           <Link href="/"                  className={styles.colLink}>Home</Link>
           <Link href="/about"             className={styles.colLink}>About Me</Link>
-          <Link href="/standard-hardware" className={styles.colLink}>Standard Hardware</Link>
+          <Link href="/siyaram-hardware" className={styles.colLink}>Siyaram Hardware</Link>
           <Link href="/standard-erp"      className={styles.colLink}>Standard ERP</Link>
           <Link href="/blog"              className={styles.colLink}>Blog</Link>
           <Link href="/contact"           className={styles.colLink}>Contact</Link>
@@ -38,7 +38,7 @@ export default function Footer() {
 
         <div className={styles.col}>
           <div className={styles.colTitle}>Ventures</div>
-          <Link href="/standard-hardware" className={styles.colLink}>Standard Hardware &amp; Supply</Link>
+          <Link href="/siyaram-hardware" className={styles.colLink}>Siyaram Hardware &amp; Suppliers</Link>
           <Link href="/standard-erp"      className={styles.colLink}>Standard ERP</Link>
           <a href="mailto:ipradeepshah@gmail.com" className={styles.colLink}>ipradeepshah@gmail.com</a>
           <a href="https://wa.me/9779815256619" target="_blank" rel="noopener noreferrer" className={styles.colLink}>+977 9815256619</a>

@@ -5,7 +5,7 @@ import styles from './Contact.module.css'
 const contactItems = [
   { icon: '✉', label: 'Email',            value: 'ipradeepshah@gmail.com',                   href: 'mailto:ipradeepshah@gmail.com' },
   { icon: '📱', label: 'Phone / WhatsApp', value: '+977 9815256619',                           href: 'https://wa.me/9779815256619' },
-  { icon: '🏢', label: 'Company',          value: 'Standard Hardware & Supply, Birgunj, Nepal', href: null },
+  { icon: '🏢', label: 'Company',          value: 'Siyaram Hardware & Suppliers, Birgunj, Nepal', href: null },
   { icon: '⬡',  label: 'Product',          value: 'Standard ERP — Coming Soon',                href: null },
   { icon: '🌐', label: 'Website',          value: 'pradeepshah.com.np',                        href: 'https://pradeepshah.com.np' },
   { icon: '📍', label: 'Location',         value: 'Birgunj, Parsa, Nepal',                     href: null },
@@ -86,7 +86,7 @@ export default function Contact() {
             <h2>Let&apos;s Build<br /><em>Something Great</em></h2>
             <div className="gold-divider" />
             <p>
-              Whether you&apos;re interested in Standard Hardware &amp; Supply, want to know more about
+              Whether you&apos;re interested in Siyaram Hardware &amp; Suppliers, want to know more about
               Standard ERP, or simply want to connect — I&apos;d love to hear from you.
             </p>
 

@@ -19,16 +19,16 @@ export default function StructuredData() {
       url: `${BASE}/pradeep-shah.jpg`,
       width: 800,
       height: 800,
-      caption: 'Pradeep Shah — CEO of Standard Hardware & Supply and Founder of Standard ERP',
+      caption: 'Pradeep Shah — CEO of Siyaram Hardware & Suppliers and Founder of Standard ERP',
     },
-    description: 'Pradeep Shah is a Computer Engineer from Kurukshetra University, CEO of Standard Hardware & Supply in Birgunj, Nepal, and Founder of Standard ERP — building next-generation business management software for small and medium businesses.',
+    description: 'Pradeep Shah is a Computer Engineer from Kurukshetra University, CEO of Siyaram Hardware & Suppliers in Birgunj, Nepal, and Founder of Standard ERP — building next-generation business management software for small and medium businesses.',
     jobTitle: 'CEO & Founder',
     hasOccupation: [
       {
         '@type': 'Occupation',
         name: 'Chief Executive Officer',
         occupationLocation: { '@type': 'City', name: 'Birgunj', containedInPlace: { '@type': 'Country', name: 'Nepal' } },
-        description: 'CEO of Standard Hardware & Supply, a hardware and construction materials business in Birgunj, Nepal.',
+        description: 'CEO of Siyaram Hardware & Suppliers, a hardware and construction materials business in Birgunj, Nepal.',
       },
       {
         '@type': 'Occupation',
@@ -39,15 +39,15 @@ export default function StructuredData() {
     ],
     worksFor: {
       '@type': 'Organization',
-      '@id': `${BASE}/#standard-hardware`,
-      name: 'Standard Hardware & Supply',
-      url: `${BASE}/standard-hardware`,
+      '@id': `${BASE}/#Siyaram-hardware`,
+      name: 'Siyaram Hardware & Suppliers',
+      url: `${BASE}/Siyaram-hardware`,
     },
     founder: [
       {
         '@type': 'Organization',
-        '@id': `${BASE}/#standard-hardware`,
-        name: 'Standard Hardware & Supply',
+        '@id': `${BASE}/#siyaram-hardware`,
+        name: 'Siyaram Hardware & Suppliers',
       },
       {
         '@type': 'SoftwareApplication',
@@ -73,7 +73,7 @@ export default function StructuredData() {
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Birgunj',
+      streetAddress: 'Nagawa Chowk',
       addressLocality: 'Birgunj',
       addressRegion: 'Parsa',
       postalCode: '44300',
@@ -98,15 +98,15 @@ export default function StructuredData() {
     ],
   }
 
-  // 2. LocalBusiness — Standard Hardware & Supply
+  // 2. LocalBusiness — Siyaram Hardware & Suppliers
   const hardware = {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'Store'],
-    '@id': `${BASE}/#standard-hardware`,
-    name: 'Standard Hardware & Supply',
-    alternateName: 'Standard Hardware Birgunj',
-    url: `${BASE}/standard-hardware`,
-    description: 'Standard Hardware & Supply is a leading hardware and construction materials business in Birgunj, Nepal. We supply construction materials, hardware tools, plumbing supplies, electrical supplies, and industrial products to contractors, builders, and local businesses.',
+    '@id': `${BASE}/#siyaram-hardware`,
+    name: 'Siyaram Hardware & Suppliers',
+    alternateName: 'Siyaram Hardware Birgunj',
+    url: `${BASE}/siyaram-hardware`,
+    description: 'Siyaram Hardware & Suppliers is a leading hardware and construction materials business in Birgunj, Nepal. We supply construction materials, hardware tools, plumbing supplies, electrical supplies, and industrial products to contractors, builders, and local businesses.',
     image: `${BASE}/og-image.jpg`,
     logo: `${BASE}/favicon-32x32.png`,
     telephone: '+9779815256619',
@@ -125,7 +125,7 @@ export default function StructuredData() {
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Birgunj',
+      streetAddress: 'Nagawa Chowk',
       addressLocality: 'Birgunj',
       addressRegion: 'Parsa',
       postalCode: '44300',
@@ -215,7 +215,7 @@ export default function StructuredData() {
     '@id': `${BASE}/#website`,
     name: 'Pradeep Shah',
     url: `${BASE}/`,
-    description: 'Personal portfolio and business website of Pradeep Shah — CEO of Standard Hardware & Supply and Founder of Standard ERP, Birgunj, Nepal.',
+    description: 'Personal portfolio and business website of Pradeep Shah — CEO of Siyaram Hardware & Suppliers and Founder of Standard ERP, Birgunj, Nepal.',
     publisher: {
       '@type': 'Person',
       '@id': `${BASE}/#pradeep-shah`,
@@ -262,7 +262,7 @@ export default function StructuredData() {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home',             item: `${BASE}/` },
       { '@type': 'ListItem', position: 2, name: 'About',            item: `${BASE}/about` },
-      { '@type': 'ListItem', position: 3, name: 'Standard Hardware', item: `${BASE}/standard-hardware` },
+      { '@type': 'ListItem', position: 3, name: 'Siyaram Hardware', item: `${BASE}/siyaram-hardware` },
       { '@type': 'ListItem', position: 4, name: 'Standard ERP',     item: `${BASE}/standard-erp` },
       { '@type': 'ListItem', position: 5, name: 'Blog',             item: `${BASE}/blog` },
       { '@type': 'ListItem', position: 6, name: 'Contact',          item: `${BASE}/contact` },
@@ -279,15 +279,15 @@ export default function StructuredData() {
         name: 'Who is Pradeep Shah?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Pradeep Shah is a Computer Engineer from Kurukshetra University, CEO of Standard Hardware & Supply in Birgunj, Nepal, and Founder of Standard ERP — a business management software platform for SMEs.',
+          text: 'Pradeep Shah is a Computer Engineer from Kurukshetra University, CEO of Siyaram Hardware & Suppliers in Birgunj, Nepal, and Founder of Standard ERP — a business management software platform for SMEs.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is Standard Hardware & Supply?',
+        name: 'What is Siyaram Hardware & Suppliers?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Standard Hardware & Supply is a hardware and construction materials business located in Birgunj, Nepal. It supplies construction materials, hardware tools, plumbing supplies, and industrial products to contractors, builders, and local businesses.',
+          text: 'Siyaram Hardware & Suppliers is a hardware and construction materials business located in Birgunj, Nepal. It supplies construction materials, hardware tools, plumbing supplies, and industrial products to contractors, builders, and local businesses.',
         },
       },
       {
@@ -300,10 +300,10 @@ export default function StructuredData() {
       },
       {
         '@type': 'Question',
-        name: 'Where is Standard Hardware & Supply located?',
+        name: 'Where is Siyaram Hardware & Suppliers located?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Standard Hardware & Supply is located in Birgunj, Parsa, Nepal. You can contact them at +977 9815256619 or email ipradeepshah@gmail.com.',
+          text: 'Siyaram Hardware & Suppliers is located in Nagawa Chowk, Birgunj, Parsa, Nepal. You can contact them at +977 9815256619 or email ipradeepshah@gmail.com.',
         },
       },
       {
