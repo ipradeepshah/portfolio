@@ -140,8 +140,8 @@ export default function StructuredData() {
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '18:00',
+        opens: '08:00',
+        closes: '20:00',
       },
     ],
     areaServed: [
@@ -313,6 +313,15 @@ export default function StructuredData() {
           '@type': 'Answer',
           text: 'You can contact Pradeep Shah via email at ipradeepshah@gmail.com, WhatsApp at +977 9815256619, or through the contact form at pradeepshah.com.np/contact.',
         },
+      },
+      
+      {
+      "@type": "Question",
+      "name": "What is Pradeep Shah's educational background?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pradeep Shah has completed studied B.Tech in Computer Science & Engineering at Kurukshetra University, Kurukshetra, India."
+      },
       },
     ],
   }
