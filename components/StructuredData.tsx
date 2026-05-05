@@ -1,4 +1,4 @@
-const BASE = 'https://pradeepshah.com.np'
+const BASE = 'https://wwww.pradeepshah.com.np'
 
 export default function StructuredData() {
 

@@ -6,7 +6,7 @@ const contactItems = [
   { icon: '✉', label: 'Email',            value: 'ipradeepshah@gmail.com',                   href: 'mailto:ipradeepshah@gmail.com' },
   { icon: '📱', label: 'Phone / WhatsApp', value: '+977 9815256619',                           href: 'https://wa.me/9779815256619' },
   { icon: '🏢', label: 'Company',          value: 'Siyaram Hardware & Suppliers, Birgunj, Nepal', href: null },
-  { icon: '⬡',  label: 'Product',          value: 'Standard ERP — Coming Soon',                href: null },
+  { icon: '⬡',  label: 'Product',          value: 'Standard ERP — Business Management Desktop Software',                href: null },
   { icon: '🌐', label: 'Website',          value: 'pradeepshah.com.np',                        href: 'https://pradeepshah.com.np' },
   { icon: '📍', label: 'Location',         value: 'Birgunj, Parsa, Nepal',                     href: null },
 ]
@@ -135,7 +135,7 @@ export default function Contact() {
             <div className={styles.field}>
               <label htmlFor="fsubject">Subject</label>
               <input
-                id="fsubject" type="text" placeholder="Standard Hardware, ERP, or general enquiry"
+                id="fsubject" type="text" placeholder="Siyaram Hardware, ERP, or general enquiry"
                 value={subject} onChange={(e) => setSubject(e.target.value)}
                 disabled={status === 'loading'}
               />
