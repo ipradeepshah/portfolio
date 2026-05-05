@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
   display: 'swap',
 })
 
-const BASE = 'https://pradeepshah.com.np'
+const BASE = 'https://wwww.pradeepshah.com.np'
 
 export const viewport: Viewport = {
   themeColor: '#0a0e1a',
