@@ -32,7 +32,7 @@ const nextConfig = {
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'pradeepshah.com.np' }],
-        destination: 'https://wwww.pradeepshah.com.np/:path*',
+        destination: 'https://www.pradeepshah.com.np/:path*',
         permanent: true,
       },
     ]
