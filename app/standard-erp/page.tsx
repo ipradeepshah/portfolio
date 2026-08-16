@@ -131,7 +131,7 @@ export default function StandardERPPage() {
               <div className={styles.founderText}>
                 <div className="section-tag">Built By</div>
                 <h2>Pradeep Shah<br /><em>Founder &amp; Developer</em></h2>
-                <p>Standard ERP is being built by Pradeep Shah — a Computer Engineer from Kurukshetra University who also runs Standard Hardware &amp; Supply in Birgunj. Having experienced firsthand the challenges of managing a business manually, Pradeep is building the software he wished existed when he started.</p>
+                <p>Standard ERP is being built by Pradeep Shah — a Computer Engineer from Kurukshetra University who also runs Siyaram Hardware &amp; Supply in Birgunj. Having experienced firsthand the challenges of managing a business manually, Pradeep is building the software he wished existed when he started.</p>
                 <Link href="/about" className={styles.founderLink}>Learn more about Pradeep →</Link>
               </div>
             </div>
