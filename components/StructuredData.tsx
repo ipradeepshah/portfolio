@@ -427,10 +427,10 @@ export default function StructuredData() {
         <a rel="me" href="https://www.crunchbase.com/person/pradeep-shah">
           Chrunchbase
         </a>
-        <a ref="me" href="https://meta.wikimedia.org/wiki/User:Pradeep_Shah">
+        <a rel="me" href="https://meta.wikimedia.org/wiki/User:Pradeep_Shah">
           Wikimedia
         </a>
-        <a ref="me" href="https://pradeepshah.bio.link/">
+        <a rel="me" href="https://pradeepshah.bio.link/">
           Biolink
         </a>
       </div>
