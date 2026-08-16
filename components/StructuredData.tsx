@@ -1,4 +1,4 @@
-const BASE = "https://wwww.pradeepshah.com.np";
+const BASE = "https://www.pradeepshah.com.np";
 
 export default function StructuredData() {
   // 1. Person — Google Knowledge Panel trigger
@@ -46,7 +46,7 @@ export default function StructuredData() {
     ],
     worksFor: {
       "@type": "Organization",
-      "@id": `${BASE}/#Siyaram-hardware`,
+      "@id": `${BASE}/#siyaram-hardware`,
       name: "Siyaram Hardware & Suppliers",
       url: `${BASE}/Siyaram-hardware`,
     },
@@ -109,6 +109,8 @@ export default function StructuredData() {
       "https://nec.gov.np/registration/9102?programName=Computer%20Engineering",
       "https://meta.wikimedia.org/wiki/User:Pradeep_Shah",
       "https://pradeepshah.bio.link/",
+      "https://www.crunchbase.com/person/pradeep-shah",
+
 
       `${BASE}/`,
     ],
@@ -127,8 +129,8 @@ export default function StructuredData() {
     image: `${BASE}/og-image.jpg`,
     logo: `${BASE}/favicon-32x32.png`,
     telephone: "+9779815256619",
-    email: "ipradeepshah@gmail.com",
-    foundingDate: "2020",
+    email: "siyaramhardwaresuppliers@gmail.com",
+    foundingDate: "2026",
     founder: {
       "@type": "Person",
       "@id": `${BASE}/#pradeep-shah`,
@@ -200,16 +202,13 @@ export default function StructuredData() {
       ],
     },
     sameAs: [
-      "https://www.linkedin.com/in/ipradeepshah/",
-      "https://www.instagram.com/i_pradeepshah",
-      "https://www.tiktok.com/@ipradeepshah",
-      "https://www.facebook.com/ipradeepshah/",
-      "https://www.crunchbase.com/person/pradeep-shah",
-      "https://x.com/i_pradeepshah",
-      "https://meta.wikimedia.org/wiki/User:Pradeep_Shah",
-      "https://meta.wikimedia.org/wiki/User:Pradeep_Shah",
-      "https://pradeepshah.bio.link/",
-      "https://nec.gov.np/registration/9102?programName=Computer%20Engineering",
+      "https://www.linkedin.com/company/siyaram-hardware-suppliers/",
+      "https://www.instagram.com/siyaramhardware.np/",
+      "https://www.tiktok.com/@siyaramhardware.np",
+      "https://www.facebook.com/siyaramhardware.np",
+      "https://www.crunchbase.com/organization/siyaram-hardware-suppliers",
+      "https://www.siyaramhardware.com.np",
+      
     ],
   };
 
